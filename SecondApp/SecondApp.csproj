@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>ae5a7a05-4598-4055-ae62-cc1ed3fd6b33</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+	  <Content Include="..\FirstApp\sharedsettings.json" Link="sharedsettings.json">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="..\FirstApp\sharedsettings.Development.json" Link="sharedsettings.Development.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\FirstApp\sharedsettings.Staging.json" Link="sharedsettings.Staging.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+	  <Content Include="..\FirstApp\sharedsettings.Production.json" Link="sharedsettings.Production.json">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+  </ItemGroup>
+
+</Project>
